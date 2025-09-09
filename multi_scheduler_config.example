@@ -1,0 +1,53 @@
+{
+  "miners": [
+    {
+      "name": "Bitaxe-1",
+      "ip": "http://192.168.1.100",
+      "enabled": true
+    },
+    {
+      "name": "Bitaxe-2",
+      "ip": "http://192.168.1.101", 
+      "enabled": true
+    },
+    {
+      "name": "Bitaxe-3",
+      "ip": "http://192.168.1.102",
+      "enabled": true,
+      // Optional: Custom settings for this specific miner
+      "day_settings": {
+        "voltage": 1100,  // This one runs cooler
+        "frequency": 425
+      }
+    }
+  ],"global_day_settings": {
+    "start_time": "07:30",
+    "end_time": "20:00",
+    "voltage": 1150,
+    "frequency": 600
+  },
+  
+  "global_night_settings": {
+    "start_time": "20:00",
+    "end_time": "07:30",
+    "voltage": 1170,
+    "frequency": 775
+  },
+  
+  "max_voltage": 1300,
+  "max_frequency": 800,
+  "max_temp": 60,
+  "max_power": 15,
+  
+  "check_interval": 60,
+  "log_stats_interval": 300,
+  
+  "smooth_transition": true,
+  "transition_steps": 5,
+  "transition_delay": 10,
+  
+  "parallel_operations": true,
+  "max_workers": 5,
+  "retry_attempts": 3,
+  "retry_delay": 5
+}

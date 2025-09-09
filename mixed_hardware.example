@@ -1,0 +1,13 @@
+{
+  "name": "Bitaxe-Hot-Room",
+  "ip": "http://192.168.1.105",
+  "enabled": true,
+  "day_settings": {
+    "voltage": 1100,    // Lower voltage for hot location
+    "frequency": 400
+  },
+  "night_settings": {
+    "voltage": 1200,    // Still conservative at night
+    "frequency": 500
+  }
+}

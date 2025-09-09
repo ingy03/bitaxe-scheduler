@@ -1,0 +1,14 @@
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# JSON files
+*.json
+
+# Log files
+*.log
+
+# Old backup files
+*.old
